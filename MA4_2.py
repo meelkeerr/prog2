@@ -13,14 +13,14 @@ def fib_numba(n):
 	if n <= 1:
 		return n
 	else:
-		fib_numba(n - 1) + fib_numba(n - 2)
+		return fib_numba(n - 1) + fib_numba(n - 2)
 	
 def main():
-	# f = Person(5)
-	# print(f.get())
-	# f.set(7)
-	# print(f.get())
-	print(fib_numba(5))
+	f = Person(5)
+	print(f.get())
+	f.set(7)
+	print(f.get())
+	
 
 if __name__ == '__main__':
 	main()
