@@ -37,9 +37,9 @@ def main():
 		t_cpp.append(end - start)
 	
 	
-	plt.plot(t_py, fib_seq, label='python')
-	plt.plot(t_numba, fib_seq, label='numba')
-	plt.plot(t_cpp, fib_seq, label='C++')
+	plt.plot(fib_seq, t_py, label='python')
+	plt.plot(fib_seq, t_numba, label='numba')
+	plt.plot(fib_seq, t_cpp, label='C++')
 	plt.grid()
 	plt.legend()
 	plt.savefig('ma4_2.png')
