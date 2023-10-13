@@ -12,7 +12,7 @@ def fib_py(n):
 		return fib_py(n - 1) + fib_py(n - 2)
 
 def main():
-	fib_seq = [fib_numba(n) for n in range(20, 31)]
+	fib_seq = [n for n in range(20, 31)]
 	t_py = []
 	t_numba = []
 	t_cpp = []
