@@ -20,6 +20,7 @@ def main():
 	print(f.get())
 	f.set(7)
 	print(f.get())
+	print(fib_numba(5))
 	
 
 if __name__ == '__main__':
