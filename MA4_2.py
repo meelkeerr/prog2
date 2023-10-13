@@ -43,8 +43,8 @@ def main():
 	plt.grid()
 	plt.legend()
 	plt.savefig('ma4_2.png')
-	print(fib_numba(10))
-	p.set(10)
+	print(fib_numba(47))
+	p.set(47)
 	print(p.fib())
 
 	
