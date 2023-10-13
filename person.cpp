@@ -24,11 +24,11 @@ void Person::set(int n){
 	age = n;
 	}
 
-int fib(){
+int Person::fib(){
     return _fib(age);
 }
 
-int _fib(int n){
+int Person::_fib(int n){
     if(n <= 1){
         return n;
     }
