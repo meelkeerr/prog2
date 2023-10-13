@@ -25,15 +25,15 @@ void Person::set(int n){
 	}
 
 int fib(){
-    return _fib(int age);
+    return _fib(age);
 }
 
-int _fib(int age){
-    if(age <= 1){
-        return age;
+int _fib(int val){
+    if(val <= 1){
+        return val;
     }
     else{
-        return _fib(age - 1) + _fib(age - 2);
+        return _fib(val - 1) + _fib(val - 2);
     }
 }
 
