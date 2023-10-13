@@ -24,7 +24,7 @@ def main():
 		t_py.append(end - start)
 
 	start = pc()
-	for n in range(1, 46):
+	for n in range(30, 46):
 		fib_numba(n)
 		end = pc()
 		t_numba.append(end - start)
