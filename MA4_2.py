@@ -42,7 +42,7 @@ def main():
 	plt.plot(t_cpp, fib_seq, label='C++')
 	plt.grid()
 	plt.legend()
-	plt.savefig()
+	plt.savefig('ma4_2.png')
 
 	
 			
