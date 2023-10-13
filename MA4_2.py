@@ -17,20 +17,23 @@ def main():
 	t_numba = []
 	t_cpp = []
 	
-	start = pc()
+	
 	for n in range(20, 31):
+		start = pc()
 		fib_py(n)
 		end = pc()
 		t_py.append(end - start)
 
-	start = pc()
+	
 	for n in range(20, 31):
+		start = pc()
 		fib_numba(n)
 		end = pc()
 		t_numba.append(end - start)
 	p = Person(1)
-	start = pc()
+	
 	for n in range(20, 31):
+		start = pc()
 		p.set(n)
 		p.fib()
 		end = pc()
@@ -41,6 +44,8 @@ def main():
 	plt.plot(fib_seq, t_numba, label='numba')
 	plt.plot(fib_seq, t_cpp, label='C++')
 	plt.grid()
+	plt.xlabel('n')
+	plt.ylabel('Time (s)')
 	plt.legend()
 	plt.savefig('ma4_2.png')
 	print(fib_numba(10))
