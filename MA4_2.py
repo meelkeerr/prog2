@@ -28,7 +28,7 @@ def main():
 		fib_numba(n)
 		end = pc()
 		t_numba.append(end - start)
-	p = Person(0)
+	p = Person(1)
 	start = pc()
 	for n in range(20, 31):
 		p.set(n)
