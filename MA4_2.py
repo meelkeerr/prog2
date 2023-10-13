@@ -35,7 +35,7 @@ def main():
 		p.fib()
 		end = pc()
 		t_cpp.append(end - start)
-		
+	
 	
 	plt.plot(t_py, fib_seq, label='python')
 	plt.plot(t_numba, fib_seq, label='numba')
@@ -43,6 +43,9 @@ def main():
 	plt.grid()
 	plt.legend()
 	plt.savefig('ma4_2.png')
+	print(fib_numba(47))
+	p.set(47)
+	print(p.fib())
 
 	
 			
