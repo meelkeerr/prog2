@@ -25,7 +25,7 @@ void Person::set(int n){
 	}
 
 int fib(){
-    return _fib(age);
+    return _fib(int age);
 }
 
 int _fib(int age){
